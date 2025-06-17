@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pengumuman Hasil SPMB SDN Kepatihan 01 Jember</title>
+    <style>
+        /* CSS Styling dengan kombinasi merah, kuning, putih */
+        :root {
+            --merah: #e74c3c;
+            --kuning: #f1c40f;
+            --putih: #ffffff;
+            --abu: #f5f5f5;
+            --hitam: #333333;
+        }
+        
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, var(--merah) 0%, var(--kuning) 100%);
+            color: var(--hitam);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background-color: var(--putih);
+            color: var(--merah);
+            padding: 25px 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            border: 3px solid var(--kuning);
+        }
+        
+        h1 {
+            margin: 0;
+            font-size: 28px;
+            text-transform: uppercase;
+        }
+        
+        h2 {
+            color: var(--merah);
+            border-bottom: 3px solid var(--kuning);
+            padding-bottom: 8px;
+            margin-top: 30px;
+            text-align: center;
+        }
+        
+        .search-box {
+            background-color: var(--putih);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            border: 2px solid var(--kuning);
+        }
+        
+        .form-group {
+            margin-bottom: 20px;
+        }
+        
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: var(--merah);
+            font-size: 18px;
+        }
+        
+        input[type="text"] {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid var(--kuning);
+            border-radius: 6px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+        
+        input[type="text"]:focus {
+            outline: none;
+            border-color: var(--merah);
+        }
+        
+        button {
+            background-color: var(--merah);
+            color: var(--putih);
+            border: none;
+            padding: 12px 25px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+        
+        button:hover {
+            background-color: #c0392b;
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .result {
+            background-color: var(--putih);
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+            display: none;
+            border: 2px solid var(--kuning);
+        }
+        
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+        
+        th {
+            background-color: var(--merah);
+            color: var(--putih);
+            padding: 15px;
+            text-align: left;
+            font-weight: bold;
+        }
+        
+        td {
+            padding: 12px 15px;
+            border-bottom: 1px solid #ddd;
+        }
+        
+        tr:nth-child(even) {
+            background-color: var(--abu);
+        }
+        
+        tr:hover {
+            background-color: #ffeaa7;
+        }
+        
+        .status-lulus {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .status-tidak-lulus {
+            color: var(--merah);
+            font-weight: bold;
+        }
+        
+        footer {
+            text-align: center;
+            margin-top: 50px;
+            padding: 20px;
+            color: var(--putih);
+            font-size: 16px;
+            background-color: rgba(0,0,0,0.5);
+            border-radius: 10px;
+        }
+        
+        .info-box {
+            background-color: var(--putih);
+            padding: 20px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            border-left: 5px solid var(--merah);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        
+        .info-box h3 {
+            color: var(--merah);
+            margin-top: 0;
+            border-bottom: 2px solid var(--kuning);
+            padding-bottom: 8px;
+        }
+        
+        .logo {
+            max-width: 120px;
+            margin-bottom: 15px;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            
+            h1 {
+                font-size: 22px;
+            }
+            
+            table {
+                font-size: 14px;
+            }
+            
+            th, td {
+                padding: 8px 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="images/logo.png" alt="Logo SDN Kepatihan 01" class="logo">
+            <h1>Sistem Penerimaan Murid Baru</h1>
+            <h1>SDN Kepatihan 01 Jember</h1>
+            <p>Tahun Ajaran 2025/2026</p>
+        </header>
+        
+        <div class="info-box">
+            <p>Selamat datang di sistem pengumuman hasil seleksi penerimaan murid baru SDN Kepatihan 01 Jember. Silakan masukkan nomor peserta Anda pada kolom di bawah untuk melihat hasil seleksi.</p>
+        </div>
+        
+        <div class="search-box">
+            <h2>Pencarian Hasil Seleksi</h2>
+            <div class="form-group">
+                <label for="no-peserta">Nomor Peserta</label>
+                <input type="text" id="no-peserta" placeholder="Contoh: 1">
+            </div>
+            <button onclick="cariHasil()">Cari Hasil</button>
+        </div>
+        
+        <div id="result" class="result">
+            <h2>Hasil Seleksi Penerimaan</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>No. Peserta</th>
+                        <th>NISN</th>
+                        <th>Nama Siswa</th>
+                        <th>Asal TK</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody id="result-body">
+                    <!-- Hasil akan ditampilkan di sini -->
+                </tbody>
+            </table>
+        </div>
+        
+        <div class="info-box">
+            <h3>Informasi Daftar Ulang</h3>
+            <p>Bagi peserta yang dinyatakan <strong class="status-lulus">LULUS</strong>, harap melakukan daftar ulang dengan ketentuan sebagai berikut:</p>
+            <ul>
+                <li><strong>Tanggal :</strong> 16 - 17 Juni 2025</li>
+                <li><strong>Waktu    :</strong> 08.00 - 11.00 WIB</li>
+                <li><strong>Tempat  :</strong> SDN Kepatihan 01 Jember</li>
+            </ul>
+            <p>Peserta yang tidak melakukan daftar ulang hingga batas waktu yang ditentukan dianggap mengundurkan diri.</p>
+        </div>
+        
+        <footer>
+            <p>© 2025 SDN Kepatihan 01 Jember | Jl. Dr. Soetomo No.16 Kepatihan Kaliwates Jember Jawa Timur</p>
+            <p>Telp : 082337606517 | Email : sdnkepsa01@gmail.com</p>
+        </footer>
+    </div>
+    
+    <script>
+        // Data contoh hasil seleksi (dalam implementasi nyata, ini bisa dari database)
+        const hasilSeleksi = [
+            { noPeserta: "2", nisn: "0061234567", nama: "ADERALD ZEROUND JIBRIELALJARAZ", asalTk: "TTK KARTIKA IV/14", status: "DITERIMA" },
+            { noPeserta: "1", nisn: "3186949854", nama: "HAIKAL ALI BAIHAQI", asalTk: "TK AN -NUR", status: "TIDAK DITERIMA" },
+            { noPeserta: "3", nisn: "3189762440", nama: "ADZKIYA SHEZI IRAWAN", asalTk: "TK DARUS SHOLAH", status: "TIDAK DITERIMA" },
+            { noPeserta: "4", nisn: "3181127851", nama: "MIKAILA SYAWALIAH DWI BUKHORI", asalTk: "TK ARNI", status: "DITERIMA" },
+            { noPeserta: "5", nisn: "3180708720", nama: "MUHAMMAD TIO AL SHIBY", asalTk: "TK KEMALA BHAYANGKARI 29 ", status: "TIDAK DITERIMA" },
+            { noPeserta: "6", nisn: "3187599132", nama: "AHMAD REHAN PUTRA DARMAWAN", asalTk: "RA. AMANAH LIL ALAMIN", status: "TIDAK DITERIMA" },
+            { noPeserta: "7", nisn: "3180952654", nama: "ARASELY SALSABILLA MACHEL", asalTk: "-", status: "TIDAK DITERIMA" },
+            { noPeserta: "8", nisn: "3188366390", nama: "QOIS GEMILANG AL FATIH", asalTk: "RA. AMANAH LIL'ALAMIN", status: "DITERIMA" },
+            { noPeserta: "9", nisn: "3180518947", nama: "KEVIN ALFA PRAYOGA", asalTk: "TK ARNI", status: "DITERIMA" },
+            { noPeserta: "10", nisn: "3183673591", nama: "SYAHRIAN ABIMANYU", asalTk: "RA AMANAH LIL ALAMIN", status: "DITERIMA" },
+            { noPeserta: "11", nisn: "3185049480", nama: "LENTERA QIANA AZKADINA", asalTk: "TK KARTINI 2 JEMBER", status: "TIDAK DITERIMA" },
+            { noPeserta: "12", nisn: "3189948235", nama: "AYLA NABILA", asalTk: "TK MUTIARA DINI", status: "DITERIMA" },
+    
+    ];
+        
+        function cariHasil() {
+            const noPeserta = document.getElementById('no-peserta').value.trim().toUpperCase();
+            const resultDiv = document.getElementById('result');
+            const resultBody = document.getElementById('result-body');
+            
+            if (!noPeserta) {
+                alert("Silakan masukkan nomor peserta Anda!");
+                return;
+            }
+            
+            // Cari data berdasarkan nomor peserta
+            const hasil = hasilSeleksi.find(item => item.noPeserta === noPeserta);
+            
+            if (hasil) {
+                resultBody.innerHTML = `
+                    <tr>
+                        <td>${hasil.noPeserta}</td>
+                        <td>${hasil.nisn}</td>
+                        <td>${hasil.nama}</td>
+                        <td>${hasil.asalTk}</td>
+                        <td class="${hasil.status === 'LULUS' ? 'status-lulus' : 'status-tidak-lulus'}">${hasil.status}</td>
+                    </tr>
+                `;
+                resultDiv.style.display = 'block';
+                
+                // Scroll ke hasil
+                resultDiv.scrollIntoView({ behavior: 'smooth' });
+            } else {
+                alert("Nomor peserta tidak ditemukan. Silakan cek kembali nomor peserta Anda.");
+                resultDiv.style.display = 'none';
+            }
+        }
+        
+        // Tambahkan event listener untuk tombol enter
+        document.getElementById('no-peserta').addEventListener('keypress', function(e) {
+            if (e.key === 'Enter') {
+                cariHasil();
+            }
+        });
+    </script>
+</body>
+</html>
